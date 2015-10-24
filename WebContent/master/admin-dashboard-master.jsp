@@ -1,5 +1,5 @@
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-static-top" role="navigation"
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation"
 	style="margin-bottom: 0">
 	<div class="navbar-header">
 		<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -180,7 +180,7 @@
 						Profile</a></li>
 				<li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a></li>
 				<li class="divider"></li>
-				<li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>
+				<li><a href="../logout"><i class="fa fa-sign-out fa-fw"></i>
 						Logout</a></li>
 			</ul> <!-- /.dropdown-user --></li>
 		<!-- /.dropdown -->
@@ -190,12 +190,14 @@
 	<div class="navbar-default sidebar" role="navigation">
 		<div class="sidebar-nav navbar-collapse">
 			<ul class="nav" id="side-menu">
-				<li><a href="index.jsp"><i class="fa fa-dashboard fa-fw"></i>
-						Dashboard</a></li>
+				<li><a href="dashboard.jsp"><i
+						class="fa fa-dashboard fa-fw"></i> Dashboard</a></li>
 				<li><a href="article.jsp"><i class="fa fa-files-o fa-fw"></i>
 						New Article</a></li>
 				<li><a href="article-manager.jsp"><i
 						class="fa fa-table fa-fw"></i> Article Manager</a></li>
+				<li><a href="category-manager.jsp"><i class="fa fa-files-o fa-fw"></i>
+						Category Manager</a></li>
 				<li><a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>
 						Charts<span class="fa arrow"></span></a>
 					<ul class="nav nav-second-level">

@@ -1,0 +1,24 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+#fix error index of
+Options All -Indexes
+
+#default index
+DirectoryIndex add-product.php
+
+#redirect error page
+ErrorDocument 404 /error-404.html
+
+#bao ve file
+#<Files .htaccess>
+#Order Allow,Deny
+#Deny from all
+#</Files>
+
+RewriteBase /brownies/
+RewriteCond %{THE_REQUEST} \.jsp [NC]
+RewriteRule ^(.+?)\.jsp$ $1.html [R=301,L]  
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+?)\.html $1.jsp [L]
